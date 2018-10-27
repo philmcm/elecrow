@@ -4,7 +4,7 @@
         "name": "Phil Mcmillan"
     },
     "description": {
-        "EN": "CAM proessor for Elecrow (2-layer) created by Phil McMillan"
+        "EN": "CAM processor for Elecrow (2-layer) created by Phil McMillan.\nUpdated 27-Oct-18 - corrected Negative Polarity error on Solder Mask layers discovered after upgrade to Eagle 9.2.0"
     },
     "output_type": "zip",
     "outputs": [
@@ -125,7 +125,7 @@
                     ],
                     "milling": false,
                     "name": "Solder Mask Bottom",
-                    "polarity": "negative",
+                    "polarity": "positive",
                     "type": "gerber_layer"
                 },
                 {
@@ -151,7 +151,7 @@
                     ],
                     "milling": false,
                     "name": "Solder Mask Top",
-                    "polarity": "negative",
+                    "polarity": "positive",
                     "type": "gerber_layer"
                 },
                 {
@@ -260,9 +260,15 @@
                 }
             ],
             "version": "X2"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
         }
     ],
-    "timestamp": "2018-08-26T21:22:09",
+    "timestamp": "2018-10-27T15:20:54",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"
